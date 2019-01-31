@@ -455,7 +455,7 @@ func (c *Cluster) BuildKubeletProcess(host *hosts.Host, prefixPath string, svcOp
 	if host.IsControl && !host.IsWorker {
 		CommandArgs["register-with-taints"] = unschedulableControlTaint
 	}
-	if host.Address != host.InternalAddress {
+	if host.Address != host.InternalAddress || true {
 		CommandArgs["node-ip"] = host.InternalAddress
 	}
 	if len(c.CloudProvider.Name) > 0 {
