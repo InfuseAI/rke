@@ -12,7 +12,7 @@ import (
 )
 
 const (
-	WorkerThreads = 50
+	WorkerThreads = 1
 
 	DefaultRKETools = "rancher/rke-tools:v0.1.34"
 )
