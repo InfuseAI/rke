@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	WorkerThreads = 50
+	WorkerThreads = 1
 )
 
 func StrToSemVer(version string) (*semver.Version, error) {
