@@ -15,7 +15,7 @@ import (
 )
 
 const (
-	WorkerThreads = 50
+	WorkerThreads = 1
 )
 
 var proxyEnvVars = [3]string{"HTTP_PROXY", "HTTPS_PROXY", "NO_PROXY"}
